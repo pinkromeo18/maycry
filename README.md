@@ -5,12 +5,16 @@
 - https://pinkromeo18.github.io/maycry/ed.js
 - https://pinkromeo18.github.io/maycry/ed.css
 - https://pinkromeo18.github.io/maycry/drop.js 
+- https://pinkromeo18.github.io/maycry/githubapi.js 
 
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://pinkromeo18.github.io/maycry/maycry.css" rel="stylesheet" />
 <link href="https://pinkromeo18.github.io/maycry/ed.css" rel="stylesheet" />
 <script src="https://pinkromeo18.github.io/maycry/ed.js" />
+<script src="https://pinkromeo18.github.io/maycry/drop.js" />
+<script src="https://pinkromeo18.github.io/maycry/githubapi.js" type="module" />
+
 ```
 
 ### maycry.css
@@ -69,4 +73,17 @@ drop((file,url)=>{
   el.textContent +='\n'+url;
   updateimg(el);///
 })
+```
+
+### githubapi.js
+```
+var opt={};
+opt.token1 ="ghp_WjFtZHMWbe2u3v4";
+opt.token2 ="Dhr5ziHCR2ufMNi37mp3f";
+opt.file = '';
+opt.baseurl ='/repos/pinkromeo18/quick-post/contents/';
+opt.debug=false;
+
+var api = githubapi(opt);
+console.log(api);
 ```
