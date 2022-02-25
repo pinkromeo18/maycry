@@ -6,6 +6,7 @@
 - https://pinkromeo18.github.io/maycry/ed.css
 - https://pinkromeo18.github.io/maycry/drop.js 
 - https://pinkromeo18.github.io/maycry/githubapi.js 
+- https://pinkromeo18.github.io/maycry/fn.js 
 
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
