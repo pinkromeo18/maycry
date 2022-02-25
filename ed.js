@@ -1,5 +1,5 @@
 /*
-and with ed.css
+with ed.css
 */
 ;(function(root){
 
@@ -45,6 +45,7 @@ and with ed.css
   function entry(query,_dat,_caller,detime=500){
     var cep='＃'
     var q_child ='[contenteditable]';
+    var cls_img ='ed-img'
     var parent = fn.q(query);
     if(!parent) return console.log('notfound query',query);
     var tag = `<div contenteditable="plaintext-only" data-ed="true">${cep}</div>`
@@ -52,6 +53,7 @@ and with ed.css
     _dat.split(cep).slice(1).map(d=>{
       var el =fn.a2(fn.i3(tag),parent)
       el.textContent =cep+d;
+      updateimg(el,cls_img)
     })
     var caller =(_caller)?debounce(_caller,detime):void 0;
     var getdat =()=>{
@@ -74,7 +76,7 @@ and with ed.css
 
     parent.onkeyup=(ev)=>{
       if(!ev.target.dataset.ed)return;
-      updateimg(ev.target,'ed-img')      
+      updateimg(ev.target,cls_img)      
       if(!caller)return;
       switch (ev.key) {
         case "Down": // IE/Edge specific value
