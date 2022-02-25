@@ -1,6 +1,48 @@
-[data-ed]{
+/*
+ [data-ed]{
   padding:0.5rem;
   border-bottom:2px solid transparent;
+}
+[data-ed]:focus{
+  outline:none;
+  border-color:var(--word);  
+}
+.ed-img{
+  background-position:right bottom;
+  background-repeat:no-repeat;
+  background-size:contain;
+  min-height:400px;
+  position:relative;
+  z-index:1;
+}
+.ed-img::before{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;right: 0;bottom: 0;left: 0;
+  content: ' ';
+  z-index:-1;
+}
+*/
+
+[data-ed]{
+  padding: 1rem;
+  overflow: auto;
+  background-color: var(--brand2);
+  border-radius: 6px;
+  white-space:pre-wrap;
+}
+
+[data-ed]{
+  margin-bottom:1.5rem;
+}
+
+[contenteditable]:focus{
+  outline:none;
+}
+
+[data-ed]{
+  padding:0.5rem;
+  border:none;
 }
 [data-ed]:focus{
   outline:none;
