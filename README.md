@@ -1,5 +1,8 @@
 # maycry
 
+- https://pinkromeo18.github.io/maycry/
+- https://pinkromeo18.github.io/maycry/maycry.css
+
 ### maycry.css
 ```
 :root{
