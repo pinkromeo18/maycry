@@ -50,9 +50,13 @@
 ```
 var update =(dat)=>{
   document.querySelector('#mes').textContent =dat.length;
+  document.querySelector('#prev').textContent =dat;
 }
 var _dat="＃新規";
-var ed1 = ed('#edtop',_dat,update,500);
+var ed1 = ed('#edtop',_dat,update);
+//and updateimg(el/*[data-ed]*/) //<------------
+
+
 ```
 
 ### drop.js
@@ -62,6 +66,7 @@ drop((file,url)=>{
   var el =document.activeElement;
   if(!url)return;
   if(!el.dataset.ed) el=ed1.querySelector('[data-ed]');
-  el.textContent +='\n'+url;  
+  el.textContent +='\n'+url;
+  updateimg(el);///
 })
 ```
