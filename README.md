@@ -31,3 +31,12 @@
 .block.full
 
 ```
+
+### ed.js ed.css
+```
+var update =(dat)=>{
+  document.querySelector('#mes').textContent =dat.length;
+}
+var _dat="＃新規";
+var ed1 = ed('#edtop',_dat,update,500);
+```
