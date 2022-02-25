@@ -56,10 +56,11 @@ img{ width:100%; height:auto; object-fit:cover;/*new*/}
 
 :root{
   --font-family:"Yu Gothic", YuGothic,"Hiragino Kaku Gothic Pro",Meiryo, Osaka,"MS PGothic", sans-serif;  
-  --brand:#000;
-  --brand2:#112;
-  --word:#f1f1ff;
-  --link:#0ff;
+  --brand:#0a0c10;
+  --brand2:#272b33;
+  --border:#7a828e;
+  --word:#f0f3f6;
+  --link:#71b7ff;  
 }
 html{font-size:16px;}
 body{
@@ -74,4 +75,29 @@ a{color:var(--link);text-decoration:none;}
 a:hover{text-decoration:underline;}
 nav.ul,nav.ul-row{list-style-type:none;}
 nav.ul-row li{display:inline-block;}
+
+* {
+  box-sizing: border-box;
+}
+
+.sticky{
+  position: sticky;
+  top: 0px;
+  z-index:999;
+}
+
+.box {
+  padding: 2rem;
+  padding-bottom:3rem;
+  border: 1px solid var(--border);
+  margin-top:3rem;
+  margin-bottom:3rem;
+  border-radius:6px;
+}
+
+h1{
+  border-bottom:1px solid var(--border);
+  line-height:1.6;
+  margin-bottom:1.5rem;
+}
 
