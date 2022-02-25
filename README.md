@@ -5,6 +5,12 @@
 - https://pinkromeo18.github.io/maycry/ed.js
 - https://pinkromeo18.github.io/maycry/ed.css
 
+```
+<link href="https://pinkromeo18.github.io/maycry/maycry.css" rel="stylesheet" />
+<link href="https://pinkromeo18.github.io/maycry/ed.css" rel="stylesheet" />
+<script src="https://pinkromeo18.github.io/maycry/ed.js" />
+```
+
 ### maycry.css
 ```
 :root{
