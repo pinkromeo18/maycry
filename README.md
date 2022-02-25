@@ -39,6 +39,11 @@
 
 .block.full
 
+.block.full.sticky
+
+.block
+ div.box
+
 ```
 
 ### ed.js ed.css
