@@ -2,6 +2,8 @@
 
 - https://pinkromeo18.github.io/maycry/
 - https://pinkromeo18.github.io/maycry/maycry.css
+- https://pinkromeo18.github.io/maycry/ed.js
+- https://pinkromeo18.github.io/maycry/ed.css
 
 ### maycry.css
 ```
