@@ -36,6 +36,30 @@ fn.jptime=(timestamp=Date.now())=>{
  ;
 } 
 
+/**/
+/*xyz.jpg -> .jpg*/
+fn.getexe=(str)=>{
+  var n = str.lastIndexOf('.');
+  if(n===-1)return '';
+  return str.slice(n);
+};
+/*xyz.jpg -> xyz*/
+fn.sliceexe=(str)=>{
+  var n = str.lastIndexOf('.');
+  if(n===-1)return str;
+  return str.slice(0,n);
+}
+fn.isrename=(file1,file2)=>{
+  var f1 =fn.sliceexe(file1)
+  var f2 =fn.sliceexe(file2)
+  return f1!=f2;
+}
+fn.countline=(dat)=>{
+  dat=dat||'';
+  var ary=dat.match(/\n/g)||[];
+  return ary.length;  
+}
+
 
  root.fn=fn;
 })(window||this);
