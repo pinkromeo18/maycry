@@ -4,6 +4,7 @@
 - https://pinkromeo18.github.io/maycry/maycry.css
 - https://pinkromeo18.github.io/maycry/ed.js
 - https://pinkromeo18.github.io/maycry/ed.css
+- https://pinkromeo18.github.io/maycry/drop.js 
 
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,4 +53,15 @@ var update =(dat)=>{
 }
 var _dat="＃新規";
 var ed1 = ed('#edtop',_dat,update,500);
+```
+
+### drop.js
+```
+drop((file,url)=>{
+  //console.log(file,url)
+  var el =document.activeElement;
+  if(!url)return;
+  if(!el.dataset.ed) el=ed1.querySelector('[data-ed]');
+  el.textContent +='\n'+url;  
+})
 ```
