@@ -21,5 +21,21 @@ fn.i3=(d)=>{
   return me
 }
 
+fn.rkana=(l=8)=>{
+ var c = "bcdfghjklmnpqrstvwxyz",cl=c.length,b ="aiueo",bl=b.length,r=""
+ ,mf=Math.floor,mr=Math.random
+ ;for(var i=0;i<l;i++) r+=(i%2)? b[mf(mr()*bl)]:c[mf(mr()*cl)].toUpperCase();
+ return r;
+}
+
+fn.jptime=(timestamp=Date.now())=>{
+ return new Date(timestamp+1000*60*60*9)
+  .toISOString()
+  .replace('T',' ')
+  .slice(0,'YYYY-MM-DD hh:mm:ss'.length)
+ ;
+} 
+
+
  root.fn=fn;
 })(window||this);
