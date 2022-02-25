@@ -101,3 +101,37 @@ h1{
   margin-bottom:1.5rem;
 }
 
+
+
+/*scroll bar dark*/
+::-webkit-scrollbar
+{
+  width:10px;
+  background:var(--brand);
+}
+::-webkit-scrollbar:horizontal
+{
+  height:10px;
+}
+::-webkit-scrollbar-button
+{
+  width:10px;
+  height:10px;
+  background:var(--brand2);  
+}
+::-webkit-scrollbar-piece
+{
+  background:var(--brand2);
+}
+::-webkit-scrollbar-piece:start
+{
+  background:var(--brand2);
+}
+::-webkit-scrollbar-thumb
+{
+  background:var(--brand2);
+}
+::-webkit-scrollbar-corner
+{
+  background:var(--brand2);
+}
