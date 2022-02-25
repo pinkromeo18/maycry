@@ -2,12 +2,6 @@
 import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 ;(function(root){
 
-  function rkana(l=8){
-    var c = "bcdfghjklmnpqrstvwxyz",cl=c.length,b ="aiueo",bl=b.length,r=""
-    ,mf=Math.floor,mr=Math.random
-    ;for(var i=0;i<l;i++) r+=(i%2)? b[mf(mr()*bl)]:c[mf(mr()*cl)].toUpperCase();
-    return r;
-  }
   function base64Encode(...parts) {
     return new Promise(resolve => {
       const reader = new FileReader();
@@ -28,10 +22,6 @@ import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
     Object.assign(api,opt);
     api.istext=istext;
     api.encode=base64Encode;
-    api.rkana=rkana;
-    ///////
-    api.file = api.rkana(8) + '.txt';
-    ///////
 
     api.list=async ()=>{
       var {debug,baseurl} = api;
