@@ -6,6 +6,7 @@
 - https://pinkromeo18.github.io/maycry/ed.css
 
 ```
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://pinkromeo18.github.io/maycry/maycry.css" rel="stylesheet" />
 <link href="https://pinkromeo18.github.io/maycry/ed.css" rel="stylesheet" />
 <script src="https://pinkromeo18.github.io/maycry/ed.js" />
