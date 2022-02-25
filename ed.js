@@ -128,10 +128,12 @@ with ed.css
   root.updateimg=updateimg;
 })(window||this);
 
+/*
 var update =(dat)=>{
   document.querySelector('#mes').textContent =dat.length;
   document.querySelector('#prev').textContent =dat;
 }
 var _dat="＃新規";
 var ed1 = ed('#edtop',_dat,update);
-//and updateimg(el/*[data-ed]*/)
+//and updateimg(el) //[data-ed]
+*/
