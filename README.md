@@ -39,10 +39,9 @@
 
 .block.full
 
-.block.full.sticky
+.block.full.sticky /* .sticky */
 
-.block
- div.box
+.block.box  /* .box */
 
 ```
 
