@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;  
+  /*padding: 0 20px;  del */
   box-sizing: border-box; }
 .column,
 .columns {
@@ -104,6 +104,9 @@ h1{
 
 
 /*scroll bar dark*/
+body{
+ overflow-y:scroll;/*always show the scroll bar*/
+}
 ::-webkit-scrollbar
 {
   width:10px;
